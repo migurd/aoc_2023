@@ -21,9 +21,8 @@ int main() {
       if(isdigit(input[i][j])) rightmost = input[i][j] - '0';
     }
     
-    snprintf(resultString, sizeof(resultString), "%d%d", leftmost, rightmost);
-    printf("%d - %d - %s\n", leftmost, rightmost, resultString);
-    sum += atoi(resultString);
+    printf("%d - %d\n", leftmost, rightmost);
+    sum += leftmost * 10 + rightmost;
   }
 
   // ans
